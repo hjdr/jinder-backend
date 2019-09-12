@@ -18,8 +18,7 @@ export const cardStyle = {
   width: "280px",
   height: "500px",
   boxShadow: "5 5 5 5px orange",
-  borderRadius: "30px",
-  overflow: "scroll"
+  borderRadius: "30px"
 };
 
 export const wrapperStyles = {
