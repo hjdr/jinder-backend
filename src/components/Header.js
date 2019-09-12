@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import whiteLogo from "../style/images/jinder-flame-white.png";
 import orangeLogo from "../style/images/jinder-flame-orange.png";
 import globalUrl from "../globalUrl";
@@ -189,12 +189,18 @@ export default function Header() {
 
   if (sessionStorage.getItem("employer_id") !== null) {
     viewProfilesAsEmployer = (
-      <Nav.Link style={{ color: `${linkColour}`, transition: "1s ease"  }} href="/candidate-profiles">
+      <Nav.Link
+        style={{ color: `${linkColour}`, transition: "1s ease" }}
+        href="/candidate-profiles"
+      >
         View Candidates
       </Nav.Link>
     );
     viewMatchesAsEmployer = (
-      <Nav.Link style={{ color: `${linkColour}`, transition: "1s ease"  }} href="/employer-matches">
+      <Nav.Link
+        style={{ color: `${linkColour}`, transition: "1s ease" }}
+        href="/employer-matches"
+      >
         View Matches
       </Nav.Link>
     );
@@ -255,8 +261,4 @@ const headerStyle = {
   width: "100%",
   zIndex: "5",
   top: 0
-};
-
-const dropdownLinkStyle = {
-  color: "#FF5903"
 };

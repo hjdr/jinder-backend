@@ -28,6 +28,9 @@ import EmployerProfile from "./components/EmployerProfile";
 import DisplayCandidateProfiles from "./components/DisplayCandidateProfiles";
 import EmployerMatches from "./components/EmployerMatches";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 class App extends React.Component {
   state = {
     // Redirects after form completion
@@ -151,7 +154,12 @@ class App extends React.Component {
 
   afterProfileCreation = res => {
     console.log(res.data);
-    this.setState({ fireRedirectAfterUserProfile: true });
+    if (res.data.id) {
+      sessionStorage.setItem("profile_id", res.data.id);
+      this.setState({ fireRedirectAfterUserProfile: true });
+    } else {
+      console.log("There was an error creating your profile");
+    }
   };
 
   // ========================
@@ -246,6 +254,8 @@ class App extends React.Component {
   };
 
   destroyRedirects = () => {
+    this.setState({ fireRedirectAfterUserProfile: false });
+    this.setState({ fireRedirectAfterEmployerProfile: false });
     this.setState({ fireRedirect: false });
     this.setState({ fireRedirectAfterUserSignIn: false });
     this.setState({ fireRedirectAfterEmployerSignIn: false });

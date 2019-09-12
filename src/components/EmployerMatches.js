@@ -1,6 +1,6 @@
 import React from "react";
 import axiosClient from "../axiosClient";
-import { Card, Container, Row, CardDeck } from "react-bootstrap";
+import { Card, Container, Row } from "react-bootstrap";
 import NoMatches from "./NoMatches";
 import globalUrl from "../globalUrl";
 import DefaultPicture from "./default.jpeg";

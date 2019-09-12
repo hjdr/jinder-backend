@@ -7,7 +7,6 @@ import { skillsOptions } from "../data/SkillsData";
 import { personalityTraits } from "../data/PersonalityTraitsData";
 import ImageUpload from "./ImageUpload";
 import PreventDisplay from "./PreventDisplay";
-import background from "../style/images/beaver.jpeg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import GeoLocator from "../GeoLocator";

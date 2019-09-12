@@ -1,7 +1,7 @@
 import Geocode from "react-geocode";
 // import api from "./secretapikey";
 import api from "./publicapikey";
-import { Row, Col, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import SimpleMap from "./Map";
 import React from "react";
 import PropTypes from "prop-types";

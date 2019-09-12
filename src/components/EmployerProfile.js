@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button, Form, Card, Container, Row, Col } from "react-bootstrap";
-import { Redirect } from "react-router-dom";
 import ImageUpload from "./ImageUpload";
 import GeoLocator from "../GeoLocator";
 

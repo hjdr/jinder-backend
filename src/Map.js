@@ -3,7 +3,6 @@ import GoogleMapReact from "google-map-react";
 // import api from "./secretapikey";
 import api from "./publicapikey";
 import PropTypes from "prop-types";
-import { StageSpinner } from "react-spinners-kit";
 import MapPointer from "./map-pointer.png";
 
 const AnyReactComponent = () => (
