@@ -5,7 +5,6 @@ import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import background from "../style/images/grey.jpeg";
 
 class EmployerLogIn extends React.Component {
   state = {

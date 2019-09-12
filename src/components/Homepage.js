@@ -45,7 +45,7 @@ export default class Homepage extends Component {
                   </Button>
                 </Card.Body>
                 <Card.Footer style={footerStyle}>
-                  <Card.Link style={linkStyle} href="/direction-sign-in">
+                  <Card.Link style={linkStyle} href="/login-direction">
                     Got an account? Sign in here
                   </Card.Link>
                 </Card.Footer>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import background from "../style/images/work-image.jpg";
+import background from "../style/images/orange.jpg";
 import { Carousel, Container, Col, Row } from "react-bootstrap";
 import Typist from 'react-typist';
 import '../style/css/Typist.css'
@@ -148,11 +148,12 @@ const captionStyle = {
 
 const aboutUsStyle = {
   padding: "15px",
-  backgroundColor: "#FF5903",
+  backgroundColor: "rgba(52, 52, 52, 0.95)",
   fontSize: 40,
   fontWeight: 'bold',
   color: '#fff',
   textAlign: 'center',
   marginTop: "10px",
-  borderRadius: "15px"
+  borderRadius: "15px",
+  marginRight: "30px"
 };
