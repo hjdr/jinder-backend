@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import background from "../style/images/orange.jpg";
+import background from "../style/images/connect.jpg";
 import { Carousel, Container, Col, Row } from "react-bootstrap";
 import Typist from 'react-typist';
 import '../style/css/Typist.css'
