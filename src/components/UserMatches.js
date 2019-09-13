@@ -24,18 +24,25 @@ class UserMatches extends React.Component {
     if (current_user_id === null) {
       return;
     }
-    let profile_id = response[0].data[0].id;
-    let employerIdsTheyLike = response[0].data[0].user.accepted_employers.map(
-      str => parseInt(str, 10)
-    );
-    let allEmployers = response[1].data;
-    let employersTheyLike = allEmployers.filter(employer =>
-      employerIdsTheyLike.includes(employer.id)
-    );
-    let matches = employersTheyLike.filter(employer =>
-      employer.accepted_profiles.includes(profile_id.toString())
-    );
-    this.setState({ matches: matches });
+
+    if (response[0].data.length > 0) {
+      let profile_id = response[0].data[0].id;
+      let employerIdsTheyLike = response[0].data[0].user.accepted_employers.map(
+        str => parseInt(str, 10)
+      );
+      let allEmployers = response[1].data;
+      let employersTheyLike = allEmployers.filter(employer =>
+        employerIdsTheyLike.includes(employer.id)
+      );
+      let matches = employersTheyLike.filter(employer =>
+        employer.accepted_profiles.includes(profile_id.toString())
+      );
+      this.setState({ matches: matches });
+    } else {
+      console.log(
+        "profile could not be retrieved properly, showing you no matches by default"
+      );
+    }
   };
 
   showImg = profile => {
