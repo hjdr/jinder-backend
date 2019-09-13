@@ -29,20 +29,24 @@ export default class Homepage extends Component {
                 <Card.Header style={cardHeaderStyle} as="h5">
                   Who are you?
                 </Card.Header>
-                <Card.Body>
-                  <Card.Text style={cardFontStyle}>
-                    I am a candidate looking for the perfect employer.
-                  </Card.Text>
-                  <Button style={buttonStyle} href="candidate-sign-up">
-                    Candidate
-                  </Button>
+                <Card.Body class="card-body align-items-center justify-content-center">
+                  <div>
+                    <Card.Text style={cardFontStyle}>
+                      I am a candidate looking for the perfect employer.
+                    </Card.Text>
+                    <Button style={buttonStyle} href="candidate-sign-up">
+                      Candidate
+                    </Button>
+                  </div>
                   <br />
-                  <Card.Text style={cardFontStyle}>
-                    I am an employer looking for the perfect candidate.
-                  </Card.Text>
-                  <Button style={buttonStyle} href="employer-sign-up">
-                    Employer
-                  </Button>
+                  <div>
+                    <Card.Text style={cardFontStyle}>
+                      I am an employer looking for the perfect candidate.
+                    </Card.Text>
+                    <Button style={buttonStyle} href="employer-sign-up">
+                      Employer
+                    </Button>
+                  </div>
                 </Card.Body>
                 <Card.Footer style={footerStyle}>
                   <Card.Link style={linkStyle} href="/login-direction">
@@ -76,23 +80,28 @@ const RowStyle = {
 };
 
 const cardStyle = {
-  width: "18rem",
+  height: "30rem",
   textAlign: "center",
   border: "none",
   margin: "auto",
   marginTop: "150px",
-  backgroundColor: "#FFFFFF99"
+  backgroundColor: "#FFFFFF99",
+  width: "100%",
+  fontSize: 25
 };
 
 const cardHeaderStyle = {
   background: "#FF5903",
-  color: "#fff"
+  color: "#fff",
+  fontSize: 50
 };
 
 const buttonStyle = {
   background: "#FF5903",
   border: "none",
-  margin: "10px"
+  margin: "10px",
+  width: "50%",
+  fontWeight: "bold"
 };
 
 const linkStyle = {
@@ -106,13 +115,13 @@ const colStyle = {
 };
 
 const TypistCtr = {
-  paddingTop: "90px",
-  paddingLeft: "50px",
+  paddingTop: "140px",
   alignItems: "center",
   fontSize: 85,
   fontWeight: 'bold',
   color: '#fff',
   textAlign: 'left',
+  width: "100%"
 }
 
 const footerStyle = {
