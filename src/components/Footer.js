@@ -20,7 +20,7 @@ export default class Footer extends Component {
                 Sign In
               </a>
               <br />
-              <a style={{ color: "#888888" }} href="/sign-up-direction">
+              <a style={{ color: "#888888" }} href="/">
                 Sign Up
               </a>
               <br />
