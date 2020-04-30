@@ -12,7 +12,7 @@
     "cypress": "^3.4.1",
     "dotenv": "^8.1.0",
     "google-map-react": "^1.1.4",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "mdbreact": "^4.19.2",
     "mdreact": "^0.1.5",
     "react": "^16.9.0",
